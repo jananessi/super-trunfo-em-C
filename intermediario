@@ -1,0 +1,89 @@
+#include<stdio.h>
+
+// Desafio Super Trunfo - Países
+// Tema 2 - Cadastro das cartas
+// Objetivo: No nível aventureiro vamos implementar a lógica para calcular e exibir duas novas propriedades
+
+ // Área para definição das variáveis para armazenar as propriedades das cidades
+int main() {
+    char estado;
+    char codigo[03];
+    char cidade[50];
+    int populacao;
+    float area;
+    float pib;
+    int turistico;
+    float denspop;
+    float pibcap;
+
+    // Área para entrada de dados
+    //dados da primeira carta
+    printf("Carta 1: \n");
+
+    printf("Escolha uma letra de A a H que represente o estado: \n");
+    scanf(" %c", &estado);
+
+    printf("Digite o código composto por a letra do estado e um número de 01 a 04: \n");
+    scanf(" %s", codigo);
+
+    printf("Digite o nome da cidade: \n");
+    scanf(" %s", cidade);
+
+    printf("Digite a população da cidade: \n");
+    scanf(" %i", &populacao);
+
+    printf("Digite a área em km2: \n");
+    scanf(" %f", &area);
+
+    printf("Digite o PIB da cidade: \n");
+    scanf(" %f", &pib);
+
+    printf("Digite quantos pontos turísticos essa cidade tem: \n");
+    scanf(" %i", &turistico);
+
+    //calculos
+    denspop = (float)populacao/area;
+    pibcap = (float)pib/populacao;
+
+    //area para resultado dos calculos
+
+    printf("A densidade populacional é: %.2f \n", denspop);
+
+    printf("O pib per capita é: %.2f \n", pibcap);
+
+    
+    //dados da segunda carta
+    printf("Carta 2: \n");
+
+    printf("Escolha uma letra de A a H que represente o estado: \n");
+    scanf(" %c", &estado);
+
+    printf("Digite o código composto por a letra do estado e um número de 01 a 04: \n");
+    scanf(" %s", codigo);
+
+    printf("Digite o nome da cidade: \n");
+    scanf(" %s", cidade);
+
+    printf("Digite a população da cidade: \n");
+    scanf(" %i", &populacao);
+
+    printf("Digite a área em km2: \n");
+    scanf(" %f", &area);
+
+    printf("Digite o PIB da cidade: \n");
+    scanf(" %f", &pib);
+
+    printf("Digite quantos pontos turísticos essa cidade tem: \n");
+    scanf(" %i", &turistico);
+
+    //calculos
+    denspop = (float)populacao/area;
+    pibcap = (float)pib/populacao;
+
+    printf("A densidade populacional é: %.2f \n", denspop);
+
+    printf("O pib per capita é: %.2f \n", pibcap);
+    
+    return 0;
+
+}
